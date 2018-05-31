@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Роман Верещагин](https://up.htmlacademy.ru/htmlcss/21/user/479791).
-* Наставник: Дмитрий Иовлев.
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker)
 
 ---
 
