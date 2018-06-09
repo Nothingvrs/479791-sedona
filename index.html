@@ -96,7 +96,27 @@
       <button class="search">
         Поиск гостинницы в седоне
       </button>
-     <!--Здесь будет форма-->
+      <form name="search-form" method="get">
+        <label for="date-0f-arrival">Дата заезда:</label>
+        <input type="text" id="date-of-arrival" value="24 апреля 2017">
+        <button class="calendar"> <img src="img/calendar.svg" alt="Выберите дату"></button>
+        <label for="date-of-departure">Дата выезда:</label>
+        <input type="text" id="date-of-departure" value="4 июля 2017">
+        <button class="calendar"> <img src="img/calendar.svg" alt="Выберите дату"></button>
+        <div class="half-width">
+          <label for="adults">Взрослые:</label>
+          <button class="plus">+</button>
+          <input type="text" id="adults" value="2">
+          <button class="minus">-</button>
+        </div>
+        <div class="half-width">
+          <label for="children">Дети:</label>
+          <button class="plus">+</button>
+          <input type="text" id="children" value="0">
+          <button class="minus">-</button>
+        </div>
+        <button name="search-button">Найти</button>
+      </form>
     </section>
   </body>
 </html>

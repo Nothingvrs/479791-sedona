@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html">
+        <a href="index.html" tabindex="0">
           <img src="img/logo-sedona.png" width="138" height="70" alt="Герб Седоны">
         </a> 
         <ul class="site-navigation">
@@ -21,12 +21,52 @@
     <main>
       <h1 class="visually-hidden">Поиск отеля в Седоне</h1>
       <section class="hotel-search">
-       <!--Здесь будет форма-->
+        <form>
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура:</legend>
+            <label for="pool">
+              Бассейн
+              <input type="checkbox" checked id="pool">
+            </label>
+            <label for="parking">
+              Парковка
+              <input type="checkbox" id="parking">
+            </label>
+            <label for="wi-fi">
+              Wi-Fi
+              <input type="checkbox" id="wi-fi">
+            </label>
+          </fieldset>
+          <fieldset class="type-of-housing">
+            <legend>Тип жилья:</legend>
+            <label for="hotel">
+              Гостинница
+              <input type="checkbox" checked id="hotel">
+            </label>
+            <label for="motel">
+              Мотель
+              <input type="checkbox" checked id="motel">
+            </label>
+            <label for="apartment">
+              Аппартаменты
+              <input type="checkbox" checked id="apartment">
+            </label>
+          </fieldset>
+          <fieldset class="price-per-day">
+            <legend>Стоимость в сутки(Р)</legend>
+            <input type="text" name="price-min" value="от 0">
+            <input type="text" name="price-max" value="до 3000">
+            <div class="scale"></div>
+            <div class="range-min"></div>
+            <div class="range-max"></div>
+            <button name="show">Показать</button>
+          </fieldset>
+        </form>
       </section>
       <section class="hotel-catalog">
         <div class="sort">
           <p>Найдено:3</p>
-          <p>Сортировка</p>
+          <p>Сортировка:</p>
           <a class="sort-type" href="#">По цене:</a>
           <a class="sort-type" href="#">По типу:</a>
           <a class="sort-type" href="#">По рейтингу:</a>
