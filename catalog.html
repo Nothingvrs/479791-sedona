@@ -22,44 +22,37 @@
       <h1 class="visually-hidden">Поиск отеля в Седоне</h1>
       <section class="hotel-search">
         <form>
+          <h2 class="visually-hidden">Инфраструктура</h2>
           <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
-            <label for="pool">
-              Бассейн
-              <input type="checkbox" checked id="pool">
-            </label>
-            <label for="parking">
-              Парковка
-              <input type="checkbox" id="parking">
-            </label>
-            <label for="wi-fi">
-              Wi-Fi
-              <input type="checkbox" id="wi-fi">
-            </label>
-          </fieldset>
+            <label for="infrastructure-pool">Бассейн</label>    
+            <input type="checkbox" checked id="pool">
+            <label for="infrastructure-parking">Парковка</label>
+            <input type="checkbox" id="parking">
+            <label for="infrastructure-wi-fi"> Wi-Fi</label>
+            <input type="checkbox" id="wi-fi"> 
+          </fieldset>    
+          <h2 class="visually-hidden">Тип жилья</h2>
           <fieldset class="type-of-housing">
             <legend>Тип жилья:</legend>
-            <label for="hotel">
-              Гостинница
-              <input type="checkbox" checked id="hotel">
-            </label>
-            <label for="motel">
-              Мотель
-              <input type="checkbox" checked id="motel">
-            </label>
-            <label for="apartment">
-              Аппартаменты
-              <input type="checkbox" checked id="apartment">
-            </label>
+            <label for="type-of-housing-hotel">Гостинница</label>
+            <input type="checkbox" checked id="hotel">  
+            <label for="type-of-housing-motel">Мотель</label>  
+            <input type="checkbox" checked id="motel">
+            <label for="type-of-housing-apartment">Аппартаменты</label>
+            <input type="checkbox" checked id="apartment">        
           </fieldset>
+          <h2 class="visually-hidden">Стоимость в сутки</h2>
           <fieldset class="price-per-day">
             <legend>Стоимость в сутки(Р)</legend>
-            <input type="text" name="price-min" value="от 0">
-            <input type="text" name="price-max" value="до 3000">
-            <div class="scale"></div>
+            <span class="price-from">От</span>
+            <input type="text" name="price-min" value="0">
+            <span class="price-to">До</span>
+            <input type="text" name="price-max" value="3000">
+            <div class="price-scale"></div>
             <div class="range-min"></div>
             <div class="range-max"></div>
-            <button name="show">Показать</button>
+            <button name="show" type="submit">Показать</button>
           </fieldset>
         </form>
       </section>
@@ -71,6 +64,8 @@
           <a class="sort-type" href="#">По типу:</a>
           <a class="sort-type" href="#">По рейтингу:</a>
         </div>
+        <button name="sort-asc" type="button"></button>
+        <button name="sort-desc" type="button"></button>
         <ul class="hotel-list">
           <li class="hotel-item">
             <img src="img/amararesort.jpg" width="135" height="90" alt="Desert quail inn">
@@ -143,3 +138,4 @@
     </footer>
   </body>
 </html>
+         
