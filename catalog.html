@@ -28,25 +28,25 @@
             <label for="infrastructure-pool">Бассейн</label>    
             <input type="checkbox" checked id="infrastructure-pool">
             <label for="infrastructure-parking">Парковка</label>
-            <input type="checkbox" id="parking">
+            <input type="checkbox" id="infrastructure-parking">
             <label for="infrastructure-wi-fi"> Wi-Fi</label>
-            <input type="checkbox" id="wi-fi"> 
+            <input type="checkbox" id="infrastructure-wi-fi"> 
           </fieldset>    
           <fieldset class="type-of-housing">
             <legend>Тип жилья:</legend>
-            <label for="type-of-housing-hotel">Гостинница</label>
-            <input type="checkbox" checked id="hotel">  
-            <label for="type-of-housing-motel">Мотель</label>  
-            <input type="checkbox" checked id="motel">
-            <label for="type-of-housing-apartment">Аппартаменты</label>
-            <input type="checkbox" checked id="apartment">        
+            <label for="type-hotel">Гостинница</label>
+            <input type="checkbox" checked id="type-hotel">  
+            <label for="type-motel">Мотель</label>  
+            <input type="checkbox" checked id="type-motel">
+            <label for="type-apartment">Аппартаменты</label>
+            <input type="checkbox" checked id="type-apartment">        
           </fieldset>
           <fieldset class="price-per-day">
             <legend>Стоимость в сутки(Р)</legend>
             <label for="price-min">От</label>
-            <input type="text" name="price-min" value="0">
+            <input type="text" id="price-min" value="0">
             <label for="price-max">До</label>
-            <input type="text" name="price-max" value="3000">
+            <input type="text" id="price-max" value="3000">
             <div class="price-scale"></div>
             <div class="range-min"></div>
             <div class="range-max"></div>
@@ -55,15 +55,18 @@
         </form>
       </section>
       <section class="hotel-catalog">
+        <h2 class="visually-hidden">Каталог отелей</h2>
         <div class="sort">
           <p>Найдено:3</p>
           <p>Сортировка:</p>
           <a class="sort-type" href="#">По цене:</a>
           <a class="sort-type" href="#">По типу:</a>
           <a class="sort-type" href="#">По рейтингу:</a>
+          <div class="sort-arrow">
+            <a class="sort-asc" href="#"><span class="visually-hidden">По возрастанию</span></a>
+            <a class="sort-desc" href="#"><span class="visually-hidden">По убывнию</span></a>
+          </div>
         </div>
-          <a class="sort-asc" href="#"><span class="visually-hidden">По возрастанию</span></a>
-          <a class="sort-desc" href="#"><span class="visually-hidden">По убывнию</span></a>
         <ul class="hotel-list">
           <li class="hotel-item">
             <img src="img/amararesort.jpg" width="135" height="90" alt="Desert quail inn">
@@ -115,7 +118,7 @@
             <span class="hotel-price">от 2000 р.</span>
             <a class="button-more" href="#">Подробнее</a>
             <a class="button-order" href="#">Забронировать</a>
-             <span class="visually-hidden">Количество звёзд 2</span>
+            <span class="visually-hidden">Количество звёзд 2</span>
             <ul class="stars">
               <li class="star"></li>
               <li class="star"></li>
