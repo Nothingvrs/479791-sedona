@@ -14,25 +14,24 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photovideo.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Поиск отеля в Седоне</h1>
       <section class="hotel-search">
+        <h2 class="visually-hidden">Форма поиска отеля в Седоне</h2>
         <form>
-          <h2 class="visually-hidden">Инфраструктура</h2>
           <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
             <label for="infrastructure-pool">Бассейн</label>    
-            <input type="checkbox" checked id="pool">
+            <input type="checkbox" checked id="infrastructure-pool">
             <label for="infrastructure-parking">Парковка</label>
             <input type="checkbox" id="parking">
             <label for="infrastructure-wi-fi"> Wi-Fi</label>
             <input type="checkbox" id="wi-fi"> 
           </fieldset>    
-          <h2 class="visually-hidden">Тип жилья</h2>
           <fieldset class="type-of-housing">
             <legend>Тип жилья:</legend>
             <label for="type-of-housing-hotel">Гостинница</label>
@@ -42,12 +41,11 @@
             <label for="type-of-housing-apartment">Аппартаменты</label>
             <input type="checkbox" checked id="apartment">        
           </fieldset>
-          <h2 class="visually-hidden">Стоимость в сутки</h2>
           <fieldset class="price-per-day">
             <legend>Стоимость в сутки(Р)</legend>
-            <span class="price-from">От</span>
+            <label for="price-min">От</label>
             <input type="text" name="price-min" value="0">
-            <span class="price-to">До</span>
+            <label for="price-max">До</label>
             <input type="text" name="price-max" value="3000">
             <div class="price-scale"></div>
             <div class="range-min"></div>
@@ -64,8 +62,8 @@
           <a class="sort-type" href="#">По типу:</a>
           <a class="sort-type" href="#">По рейтингу:</a>
         </div>
-        <button name="sort-asc" type="button"></button>
-        <button name="sort-desc" type="button"></button>
+          <a class="sort-asc" href="#"><span class="visually-hidden">По возрастанию</span></a>
+          <a class="sort-desc" href="#"><span class="visually-hidden">По убывнию</span></a>
         <ul class="hotel-list">
           <li class="hotel-item">
             <img src="img/amararesort.jpg" width="135" height="90" alt="Desert quail inn">
@@ -78,6 +76,7 @@
             <span class="hotel-price">от 4000 р.</span>
             <a class="button-more" href="#">Подробнее</a>
             <a class="button-order" href="#">Забронировать</a>
+            <span class="visually-hidden">Количество звёзд 4</span>
             <ul class="stars">
               <li class="star"></li>
               <li class="star"></li>
@@ -97,6 +96,7 @@
             <span class="hotel-price">от 3000 р.</span>
             <a class="button-more" href="#">Подробнее</a>
             <a class="button-order" href="#">Забронировать</a>
+            <span class="visually-hidden">Количество звёзд 3</span>
             <ul class="stars">
               <li class="star"></li>
               <li class="star"></li>
@@ -115,6 +115,7 @@
             <span class="hotel-price">от 2000 р.</span>
             <a class="button-more" href="#">Подробнее</a>
             <a class="button-order" href="#">Забронировать</a>
+             <span class="visually-hidden">Количество звёзд 2</span>
             <ul class="stars">
               <li class="star"></li>
               <li class="star"></li>
@@ -127,9 +128,9 @@
     <footer class="main-footer">
       <p class="hashtag">#visitsedona</p>
       <ul class="footer-social">
-        <li><a class="social-twitter social-item" href="#">Твиттер</a></li>
-        <li><a class="social-facebook social-item" href="#">Фейсбук</a></li>
-        <li><a class="social-youtube social-item" href="#">YouTube</a></li>
+        <li><a class="social-twitter social-item" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+        <li><a class="social-facebook social-item" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a class="social-youtube social-item" href="#"><span class="visually-hidden">YouTube</span></a></li>
       </ul>
       <div class="htmllogo">
         <span>website by</span>
