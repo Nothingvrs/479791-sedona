@@ -41,12 +41,8 @@ a {
 
 
 .banner {
-  background-color:#81b3d2;
-  background-image:url("../img/sedona.jpg"); 
-  background-repeat: no-repeat;  
-  background-image:url("../img/triangle-white.png"); 
-  background-repeat: no-repeat; 
-  background-position: bottom center;        
+  background: #81b3d2 url("../img/triangle-white.png") no-repeat,
+              url("../img/sedona.jpg") no-repeat;      
 }
 
 .sedona-intro {
