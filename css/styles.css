@@ -8,7 +8,7 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -41,8 +41,8 @@ a {
 
 
 .banner {
-  background: #81b3d2 url("../img/triangle-white.png") no-repeat,
-              url("../img/sedona.jpg") no-repeat;      
+  background:  url("../img/triangle-white.svg") no-repeat bottom/ 100%,
+               #81b3d2 url("../img/sedona.jpg") no-repeat center;      
 }
 
 .sedona-intro {
@@ -88,15 +88,15 @@ a {
 }
 
 .advantages-town-house {
-  background:white url("../img/icon-1.svg") no-repeat;
+  background:white url("../img/icon-house.svg") no-repeat;
 }
 
 .advantages-town-burger {
-  background:white url("../img/icon-3.svg") no-repeat;
+  background:white url("../img/icon-burger.svg") no-repeat;
 }
 
 .advantages-town-souvenir {
-  background:white url("../img/icon-2.svg") no-repeat;
+  background:white url("../img/icon-souvenir.svg") no-repeat;
 }
 
 .advantages-town h4 {
@@ -218,28 +218,27 @@ a {
   color: #ffffff;
 }
 
-button[name="show"] {
+.show {
   font-size:14px;
   line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-.found {
+.hotel-found {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
   text-transform: uppercase;
   color: #000000;
 }
 
-.sort p:nth-child(2) {
+.hotel-found {
   font-size: 12px;
   line-height: 18px;
   color: #000000;
 }
 
-.sort a {
+.sort-type {
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
@@ -247,16 +246,16 @@ button[name="show"] {
   border-bottom: 1px dotted;
 }
 
-.sort a:hover {
+.sort-type:hover {
   border-bottom: 1px dotted #81b3d2;
   color: #81b3d2;
 }
 
-.sort a:focus {
+.sort-type:focus {
   color: #81b3d2;
 }
 
-.sort a:active {
+.sort-type:active {
   color: #000000;
 }
 
@@ -323,6 +322,7 @@ button[name="show"] {
   font-weight: bold;
   color: #ffffff;
   background-color: #766357;
+  font: inherit;
 }
 
 .button-order:hover {
@@ -352,4 +352,7 @@ button[name="show"] {
   background-color: #666666;
 }
 
-
+button, 
+input {
+  font: inherit;
+}
