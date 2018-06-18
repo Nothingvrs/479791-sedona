@@ -105,7 +105,7 @@ a {
   line-height: 21px;
 }
 
-.advantages-item-grey {
+.advantages-grey {
   background-color: #eeeeee;
 }
 
@@ -394,4 +394,119 @@ input {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+}
+
+/* Сетки */
+
+
+.main-navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; 
+}
+ 
+.site-navigation {
+  margin:0;
+  width: 100%;
+}
+
+header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.banner {
+  margin-bottom: 0;
+}
+
+.sedona-intro {
+  text-align: center;
+  width: 100%;
+  text-align: center;
+}
+
+.sedona-intro p {
+  margin:0;
+}
+
+.intro {
+  margin:0;
+}
+
+.small-town {
+  display:flex;
+}
+
+.small-town div {
+  width: 33%;
+  box-sizing: border-box;
+}
+
+.advantages-list {
+  margin:0;
+  padding:0;
+}
+
+.advantages-town {
+  display:flex;
+  justify-content: space-around;
+}
+
+.diablo-bridge {
+  display: flex;
+}
+
+.diablo-bridge div {
+  width: 33,3%;
+  box-sizing: border-box;
+}
+
+.advantages-grey {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-order h2 {
+  margin:0;
+}
+
+.main-footer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hotel-catalog-header {
+  display: flex;
+  background: #ffffff;
+  margin-bottom: 2px;
+}
+
+.hotel-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-item {
+  display: flex;
+  margin-bottom: 2px;
+  background: #ffffff;
+  width: 100%;
+}
+
+.stars {
+  list-style: none;
 }
