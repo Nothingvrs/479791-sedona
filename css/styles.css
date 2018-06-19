@@ -42,7 +42,13 @@ a {
 
 .banner {
   background:  url("../img/triangle-white.svg") no-repeat bottom/ 100%,
-               #81b3d2 url("../img/sedona.jpg") no-repeat center;      
+               #81b3d2 url("../img/sedona.jpg") no-repeat center;
+  background-size: cover;      
+}
+
+.banner-img {
+
+  margin:0 auto;
 }
 
 .sedona-intro {
@@ -398,29 +404,31 @@ input {
 
 /* Сетки */
 
-
-.main-navigation {
-  display: flex;
-  justify-content: space-around;
-  width: 100%; 
-}
  
 .site-navigation {
+  display:flex;
   margin:0;
+  padding:0;
   width: 100%;
 }
 
-header {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.site-navigation li {
+  width: 20%;
 }
 
-main {
+.site-navigation li:nth-child(-n+2) {
+  justify-content: flex-start;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+}
+
+.conteiner {
   max-width: 1200px;
+  min-width: 768px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 }
 
 .banner {
@@ -479,9 +487,6 @@ main {
 }
 
 .main-footer {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   background: #ffffff;
   display: flex;
   justify-content: space-around;
@@ -510,3 +515,10 @@ main {
 .stars {
   list-style: none;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
