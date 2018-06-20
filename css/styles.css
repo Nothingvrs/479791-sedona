@@ -40,25 +40,41 @@ a {
 }
 
 
-.banner {
-  background:  url("../img/triangle-white.svg") no-repeat bottom/ 100%,
-               #81b3d2 url("../img/sedona.jpg") no-repeat center;
-  background-size: cover;      
+.banner { 
+  height: 520px;
+  background: url(../img/banner-bottom.svg),
+              url("../img/sedona.jpg");
+  background-size: cover, 100%;                 
+  background-color: #81b3d2;
+  background-position: bottom, initial;
+  
 }
 
-.banner-img {
-
-  margin:0 auto;
+.banner-center {
+  width: 458px;
+  height: 352px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .sedona-intro {
   background-color: #ffffff;
+  height: 216px;
 }
 
 .intro {
   font-size:21px;
   font-weight: bold;
   line-height: 26px;
+  text-align:center;
+  vertical-align: center;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .sedona-intro p {
@@ -91,17 +107,54 @@ a {
 .advantages-town {
   background-color: #ffffff;
   color: #000000;
+  text-align: center;
 }
 
-.advantages-town-house {
+.advantages-town-house h4:before {
   background:white url("../img/icon-house.svg") no-repeat;
+  width: 75px;
+  height: 72px;
+  content: "";
+  position: absolute;
+  top: -108px;
+  left: 35%;  
 }
 
-.advantages-town-burger {
+.advantages-town-burger h4:before {
+  background:white url("../img/icon-burger.svg") no-repeat;
+  width: 74px;
+  height: 70px;
+  content: "";
+  position: absolute;
+  top: -108px; 
+  left: 35%; 
+}
+
+.advantages-town-souvenir h4:before {
+  background:white url("../img/icon-souvenir.svg") no-repeat;
+  width: 64px;
+  height: 76px;
+  content: "";
+  position: absolute;
+  top: -108px;
+  left: 38%; 
+}
+
+.advantages-town p {
+  max-width: 265px;
+  margin-bottom: 83px;
+}
+
+.advantages-town h4{
+  position: relative;
+  margin-top: 165px;
+}
+
+.advantages-town-burger h4:before {
   background:white url("../img/icon-burger.svg") no-repeat;
 }
 
-.advantages-town-souvenir {
+.advantages-town-souvenir h4:before {
   background:white url("../img/icon-souvenir.svg") no-repeat;
 }
 
@@ -125,17 +178,24 @@ a {
   text-align: center;
  }
 
-.form-order a {
-  background-color:#766357;
+ .form-order a {
   text-align: center;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
+ }
+
+.modal-btn-search {
+  background-color:#766357;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+
 }
 
-.form-order a:hover,
-.form-order a:focus {
+.modal-btn-search:hover,
+.modal-btn-search:focus {
   background-color: #604e43;
 }
 
@@ -410,10 +470,19 @@ input {
   margin:0;
   padding:0;
   width: 100%;
+  height: 56px;
+  align-items: center;
+}
+
+.logo-sedona {
+  position: absolute;
+  margin-left: 530px;
 }
 
 .site-navigation li {
+  box-sizing: border-box;
   width: 20%;
+  padding-left: 75px ;
 }
 
 .site-navigation li:nth-child(-n+2) {
@@ -446,16 +515,33 @@ input {
 }
 
 .intro {
-  margin:0;
+  margin:;
 }
 
 .small-town {
   display:flex;
+  height: 256px;
 }
 
-.small-town div {
+.small-town p {
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-town-title {
+  margin-left: auto;
+  margin-right: auto;
   width: 33%;
-  box-sizing: border-box;
+}
+
+
+.small-town-img {
+  background-image: url("../img/smalltown.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 67%;
 }
 
 .advantages-list {
@@ -466,30 +552,141 @@ input {
 .advantages-town {
   display:flex;
   justify-content: space-around;
+  height:;
 }
 
 .diablo-bridge {
   display: flex;
+  height: 256px;
 }
 
-.diablo-bridge div {
-  width: 33,3%;
-  box-sizing: border-box;
+.diablo-bridge-img{
+  width: 67%;
+  background-image:url("../img/diablobridge.jpg");
+  background-position: center;
+  background-size: covern; 
+  background-repeat: no-repeat;
+}
+
+.diablo-bridge p {
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.diablo-bridge-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
 }
 
 .advantages-grey {
   display: flex;
-  justify-content: space-around;
+  height: 255px; 
+  align-items: center;
+}
+
+.advantages-item-grey {
+  width: 33%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.advantages-item-grey p {
+  max-width: 270px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.advantages-item-grey h3{
+  max-width: 130px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .form-order h2 {
   margin:0;
+ }
+
+.modal-btn-search {
+  height: 55px;
+  width: 575px;
+  border: 1px solid black;
+}
+
+.form-order-content {
+  max-width: 465px;
+  max-height: 118px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.form-order {
+  height: 290px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.map {
+  height: 473px;
+  background-color: #e9e5dc;
 }
 
 .main-footer {
   background: #ffffff;
   display: flex;
-  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.main-footer>p {
+  width: 33%;
+  padding-left: 132px;
+}
+
+.footer-social {
+  width: 33%;
+  
+}
+
+.social-conteiner {
+  width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:0;
+  margin:0;
+}
+
+.footer-social li {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  background: #81b3d2;
+  align-items: center;
+  justify-content: center; 
+}
+
+.social-item {
+  width: 50px;
+  height: 50px;
+}
+
+.htmllogo {
+  width: 33%;
+}
+
+.htmllogo a {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.htmllogo p {
+  display: inline-block;
+  margin: 0;
 }
 
 .hotel-catalog-header {
