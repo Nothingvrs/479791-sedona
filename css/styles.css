@@ -40,28 +40,33 @@ a {
 }
 
 
-.banner { 
+.banner {
+  position: relative;
   height: 520px;
-  background: url(../img/banner-bottom.svg),
-              url("../img/sedona.jpg");
-  background-size: cover, 100%;                 
-  background-color: #81b3d2;
-  background-position: bottom, initial;
-  
+  background: url(../img/banner-bottom.svg) no-repeat bottom center / 100%,
+              #81b3d2 url("../img/sedona.jpg") no-repeat center;
+}
+   
+ 
+.banner img {
+  position: absolute;
+  left: 30%;
+  top: 10%;
 }
 
 .banner-center {
   width: 458px;
   height: 352px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  position: relative;
+  top: 25%;
 }
 
 .sedona-intro {
+  display: flex;
   background-color: #ffffff;
   height: 216px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intro {
@@ -73,8 +78,7 @@ a {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 35px;
 }
 
 .sedona-intro p {
@@ -176,6 +180,9 @@ a {
  .form-order {
   background-color: #ffffff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end
  }
 
  .form-order a {
@@ -490,6 +497,7 @@ input {
 .logo-sedona {
   position: absolute;
   margin-left: 44%;
+  z-index: 1;
 }
 
 .main-navigation {
