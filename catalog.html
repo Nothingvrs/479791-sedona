@@ -28,31 +28,47 @@
           <form class="search-hotel">
               <fieldset class="infrastructure">
                 <legend>Инфраструктура:</legend>
-                <label for="infrastructure-pool">Бассейн</label>    
-                <input type="checkbox" checked id="infrastructure-pool">
-                <label for="infrastructure-parking">Парковка</label>
-                <input type="checkbox" id="infrastructure-parking">
-                <label for="infrastructure-wi-fi"> Wi-Fi</label>
-                <input type="checkbox" id="infrastructure-wi-fi"> 
+                <div class="infrastructure-item">    
+                  <input class="visually-hidden input-checkbox" type="checkbox" checked id="infrastructure-pool">
+                  <label for="infrastructure-pool">Бассейн</label>
+                </div>
+                <div class="infrastructure-item">
+                  <input class="visually-hidden input-checkbox" type="checkbox" id="infrastructure-parking">
+                  <label for="infrastructure-parking">Парковка</label>
+                </div>
+                <div class="infrastructure-item"> 
+                  <input class="visually-hidden input-checkbox" type="checkbox" id="infrastructure-wi-fi">
+                  <label for="infrastructure-wi-fi">Wi-Fi</label> 
+                </div>                
               </fieldset>    
               <fieldset class="type-of-housing">
                 <legend>Тип жилья:</legend>
-                <label for="type-hotel">Гостинница</label>
-                <input type="checkbox" checked id="type-hotel">  
-                <label for="type-motel">Мотель</label>  
-                <input type="checkbox" checked id="type-motel">
-                <label for="type-apartment">Аппартаменты</label>
-                <input type="checkbox" checked id="type-apartment">        
+                <div class="type-of housing-item">
+                  <input class="visually-hidden input-checkbox" type="checkbox" checked id="type-hotel">
+                  <label for="type-hotel">Гостинница</label> 
+                </div>
+                <div class="type-of housing-item">  
+                  <input class="visually-hidden input-checkbox" type="checkbox" checked id="type-motel">
+                  <label for="type-motel">Мотель </label>
+                </div>
+                <div class="type-of housing-item">
+                  <input class="visually-hidden input-checkbox" type="checkbox" checked id="type-apartment">
+                  <label for="type-apartment">Аппартаменты</label>  
+                </div>      
               </fieldset>
               <fieldset class="price-per-day">
-                <legend>Стоимость в сутки(Р)</legend>
-                <label for="price-min">От</label>
-                <input type="text" id="price-min" value="0">
-                <label for="price-max">До</label>
-                <input type="text" id="price-max" value="3000">
-                <div class="price-scale"></div>
-                <div class="range-min"></div>
-                <div class="range-max"></div>
+                <legend>Стоимость в сутки (Р)</legend>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
                 <button class="show" type="submit">Показать</button>
               </fieldset>
           </form>
@@ -62,12 +78,16 @@
           <div class="hotel-catalog-header">
             <b class="hotel-found">Найдено:3</b>
             <span class="hotel-sort-label">Сортировка:</span>
-            <a class="sort-type" href="#">По цене:</a>
+            <a class="sort-type sort-type-price" href="#">По цене:</a>
             <a class="sort-type" href="#">По типу:</a>
             <a class="sort-type" href="#">По рейтингу:</a>
             <div class="sort-arrow">
-              <a class="sort-asc" href="#"><span class="visually-hidden">По возрастанию</span></a>
-              <a class="sort-desc" href="#"><span class="visually-hidden">По убывнию</span></a>
+              <div class="sort-asc">
+                <a href="#"><span class="visually-hidden">По возрастанию</span></a>
+              </div>
+              <div class="sort-desc">
+                <a  href="#"><span class="visually-hidden">По убывнию</span></a>
+              </div>
             </div>  
           </div>
           <ul class="hotel-list">
@@ -91,11 +111,10 @@
                     <a class="button-order" href="#">Забронировать</a>
                   </div>
                 </div> 
-                <div class="rating">
-                  <span class="visually-hidden">Количество звёзд 4</span>
-                  <ul class="stars">
-                    <li class="star-four"></li>
-                  </ul>
+                <div class="rating">                 
+                  <div class="stars star-four">
+                     <span class="visually-hidden">Количество звёзд 4</span>
+                  </div>
                   <span class="rating-results">Рейтинг: 8,5</span>
                 </div>
               </li> 
@@ -118,11 +137,10 @@
                     <a class="button-order" href="#">Забронировать</a>
                   </div>
                 </div>
-                <div class="rating">
-                  <span class="visually-hidden">Количество звёзд 3</span>
-                  <ul class="stars">
-                    <li class="star-three"></li>
-                  </ul>
+                <div class="rating">                  
+                  <div class="stars star-three">
+                    <span class="visually-hidden">Количество звёзд 3</span>
+                  </div>
                   <span class="rating-results">Рейтинг: 8,9</span>
                 </div>
               </li>
@@ -145,11 +163,10 @@
                     <a class="button-order" href="#">Забронировать</a>
                   </div>
                 </div>
-                <div class="rating">
-                  <span class="visually-hidden">Количество звёзд 2</span>
-                  <ul class="stars">
-                    <li class="star-two"></li>
-                  </ul>
+                <div class="rating">                  
+                  <div class="stars star-two">
+                    <span class="visually-hidden">Количество звёзд 2</span>  
+                  </div>
                   <span class="rating-results">Рейтинг: 9,2</span>
                 </div>
               </li>
