@@ -36,18 +36,16 @@ a {
 }
 
 .site-navigation a:focus {
-  color:#766357;
+  color: #766357;
 }
 
 
 .banner {
   position: relative;
-  height: 520px;
-  background: url(../img/banner-bottom.png) no-repeat,
-              #81b3d2 url("../img/sedona.jpg") no-repeat;
-  background-size: 100% , cover; 
-  background-clip: content-box;
-  background-position:bottom center, 0 -48px;
+  height: 512px;
+  background: url(../img/banner-bottom.png) no-repeat center bottom,
+              #81b3d2 url("../img/sedona.jpg") no-repeat 50% 30%;
+  background-size: 100% 58px, 100% auto;
 }
    
  
@@ -75,10 +73,10 @@ a {
 }
 
 .intro {
-  font-size:21px;
+  font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  text-align:center;
+  text-align: center;
   vertical-align: center;
   width: 600px;
   margin-left: auto;
@@ -95,12 +93,12 @@ a {
 }
 
 .advantages-list h3 {
-  font-size:21px;
+  font-size: 21px;
   line-height: 21px;
   font-weight: bold;  
 }
 
-.advantages-item:nth-child(-n+2) {
+.diablo-bridge {
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -307,7 +305,7 @@ a {
 }
 
 .show {
-  font-size:14px;
+  font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
@@ -379,12 +377,12 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  margin:0;
+  margin: 0;
   margin-bottom: 5px;
 }
 
 .title {
-  margin:0;
+  margin: 0;
 }
 
 .title a {
@@ -520,15 +518,14 @@ input {
 
  
 .site-navigation {
-  display:flex;
-  margin:0;
-  padding:0;
+  display: flex;
+  margin: 0;
+  padding: 0;
   padding-left: 6%;
   padding-right: 6%;
   max-width: 1200px;
   height: 56px;
   align-items: center;
-  box-sizing: 1200px;
 }
 
 .logo-sedona {
@@ -559,7 +556,7 @@ input {
   text-align: right;
 }
 
-.conteiner {
+.container {
   max-width: 1200px;
   min-width: 768px;
   margin-left: auto;
@@ -577,16 +574,14 @@ input {
 }
 
 .sedona-intro p {
-  margin:0;
-}
-
-.intro {
-  margin:;
+  margin: 0;
 }
 
 .small-town {
-  display:flex;
+  display: flex;
   height: 256px;
+  background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .small-town p {
@@ -611,14 +606,13 @@ input {
 }
 
 .advantages-list {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-town {
-  display:flex;
+  display: flex;
   justify-content: space-around;
-  height:;
 }
 
 .diablo-bridge {
@@ -675,7 +669,7 @@ input {
   }
 
 .form-order h2 {
-  margin:0;
+  margin: 0;
  }
 
 .modal-btn-search {
@@ -742,13 +736,13 @@ input {
   
 }
 
-.social-conteiner {
+.social-container {
   width: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-social li {
@@ -848,7 +842,7 @@ img {
   height: 17px;
   box-sizing: border-box;
   margin-bottom: 48px;
-  padding:0;
+  padding: 0;
 }
 
 .center {
@@ -868,12 +862,12 @@ img {
   left: 50%;
   margin-left: -287.5px;
   top: 290px;
-  z-index:1; 
+  z-index: 1; 
 }
 
 .search-form {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
   width: 575px;
@@ -899,7 +893,7 @@ img {
 .visitor-minus,
 .visitor-plus{
   border: 0;
-  padding:0;
+  padding: 0;
   width: 40px;
   height: 40px;
   box-sizing: border-box;
@@ -933,7 +927,7 @@ img {
 } 
 
 .search-form input[type="button"]{
-  margin:0;
+  margin: 0;
 }
 
 .visitor-adults-area {
@@ -1004,7 +998,7 @@ img {
 }
 
 .infrastructure legend {
-  margin:0;
+  margin: 0;
   margin-bottom: 20px;
   display: block;
 }
@@ -1045,7 +1039,7 @@ img {
 }
 
 .type-of-housing legend {
-  margin:0;
+  margin: 0;
   margin-bottom: 20px;
   display: block;
 }
@@ -1164,7 +1158,7 @@ img {
   top: -9px;
   background: #ababab;
   border: 8px solid #ffffff;
-  border-radius: 50%;
+  border-radius: 100%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
