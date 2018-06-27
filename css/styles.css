@@ -124,7 +124,8 @@ a {
   content: "";
   position: absolute;
   top: -108px;
-  left: 35%;  
+  left: 50%; 
+  margin-left: -37.5px; 
 }
 
 .advantages-town-burger h4:before {
@@ -134,7 +135,8 @@ a {
   content: "";
   position: absolute;
   top: -108px; 
-  left: 35%; 
+  left: 50%; 
+  margin-left: -37px; 
 }
 
 .advantages-town-souvenir h4:before {
@@ -144,7 +146,8 @@ a {
   content: "";
   position: absolute;
   top: -108px;
-  left: 38%; 
+  left: 50%; 
+  margin-left: -32px;  
 }
 
 .advantages-town p {
