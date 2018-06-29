@@ -81,12 +81,10 @@ a {
   margin-right: auto;
   margin-bottom: 28px;
   margin-top: 58px;
-  letter-spacing: 0.05px;
 }
 
 .sedona-intro p {
   line-height: 26px;
-  letter-spacing: 0.05px;
 }
 
 .advantages-list {
@@ -154,7 +152,6 @@ a {
 
 .advantages-town p {
   max-width: 300px;
-  letter-spacing: 0.05px;
 }
 
 .advantages-town h4{
@@ -168,10 +165,6 @@ a {
 
 .advantages-grey {
   background-color: #eeeeee;
-}
-
-.search-form label {
-  letter-spacing: 0.25px;
 }
 
 .form-order h2 {
@@ -192,13 +185,11 @@ a {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  letter-spacing: 0.01px;
  }
 
 .form-order p {
   margin:0;
   margin-top: 5px;
-  letter-spacing: 0.1px;
 }
 
 .form-order-dates {
@@ -427,7 +418,7 @@ a {
   font-weight: bold;
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 5px 15px;
+  padding: 4.5px 17px;
   margin-right: 3px;
 }
 
@@ -452,7 +443,7 @@ a {
   color: #ffffff;
   background-color: #766357;
   font: inherit;
-  padding: 5px 15px;
+  padding: 4.5px 17px;
 }
 
 .button-order:hover {
@@ -494,12 +485,12 @@ input {
 /* Классы звёзд рэйтинга */
 
 .star-five {
-  width: 100px;
+  width: 115px;
   background: url("../img/star.svg") no-repeat,
-              url("../img/star.svg") no-repeat 25px 0,
-              url("../img/star.svg") no-repeat 50px 0,
-              url("../img/star.svg") no-repeat 60px 0,
-              url("../img/star.svg") no-repeat 80px 0;
+              url("../img/star.svg") no-repeat 24px 0,
+              url("../img/star.svg") no-repeat 48px 0,
+              url("../img/star.svg") no-repeat 72px 0,
+              url("../img/star.svg") no-repeat 96px 0;
 }
 
 .star-four {
@@ -511,20 +502,20 @@ input {
 }
 
 .star-three {
-  width: 60px;
+  width: 65px;
   background: url("../img/star.svg") no-repeat,
-              url("../img/star.svg") no-repeat 30px 0,
-              url("../img/star.svg") no-repeat 60px 0;
+              url("../img/star.svg") no-repeat 24px 0,
+              url("../img/star.svg") no-repeat 48px 0;
 }
 
 .star-two {
   width: 40px;
   background: url("../img/star.svg") no-repeat,
-              url("../img/star.svg") no-repeat 30px 0;
+              url("../img/star.svg") no-repeat 24px 0;
 }
 
 .star-one {
-  width: 20px;
+  width: 18px;
   background: url("../img/star.svg") no-repeat;
 }              
 
@@ -586,7 +577,7 @@ input {
   min-width: 768px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 5px 5px #000000;
+  box-shadow: 0 0 20px 3px #dadada;
 }
 
 .banner {
@@ -637,15 +628,13 @@ input {
   text-align: center;
   margin-top: 45px;
   margin-bottom: 25px;
-  letter-spacing: 0.1px;
 }
 
 .small-town-title p {
-  width: 310px;
+  width: 300px;
   margin: 0;
   margin-top: 20px;
-  letter-spacing: 0.1px;
-}
+ }
 
 .advantages-list {
   margin: 0;
@@ -667,13 +656,12 @@ input {
 }
 
 .diablo-bridge-title h3 {
-  width: 153px;
+  width: 151px;
   height: 60px;
   margin-top: 45px;
   margin-bottom: 7px;
   margin-left: auto;
   margin-right: auto; 
-  letter-spacing: 0.15px; 
 }
 
 .diablo-bridge-title p {
@@ -681,7 +669,6 @@ input {
   max-width: 315px;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: 0.1px;
 }
 
 .diablo-bridge-title {
@@ -706,11 +693,10 @@ input {
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
-  letter-spacing: 0.1px;
 }
 
-.tourists {
-  width: 260px;
+.advantages-item-grey .tourists {
+  width: 250px;
 }
 
 .advantages-item-grey h3{
@@ -720,8 +706,7 @@ input {
   margin-left: auto;
   margin-top: 45px;
   margin-bottom: 25px;
-  letter-spacing: 0.2px
-}
+ }
 
 
 .form-order h2 {
@@ -870,7 +855,7 @@ input {
   align-items: cente;
   height: 150px;
   box-sizing: border-box;
-  padding: 30px 0;
+  padding: 25px 0;
 }
 
 .hotel-item img {
@@ -897,6 +882,11 @@ img {
   margin-left: auto;
   width: 120px;
   flex-direction: column;
+  margin-top: 5px;
+}
+
+.hotel-photo {
+  margin-top: 5px;
 }
 
 .stars {
@@ -926,6 +916,7 @@ img {
   margin-left: -285px;
   top: 290px;
   z-index: 1; 
+  display: none;
 }
 
 .search-form {
@@ -943,7 +934,7 @@ img {
 
 .search-form input[type="text"] {
   width: 310px;
-  height: 40px;
+  height: 39px;
   box-sizing: border-box;
   text-transform: uppercase;
 }
@@ -961,7 +952,7 @@ img {
   border: 0;
   padding: 0;
   width: 40px;
-  height: 40px;
+  height: 39px;
   box-sizing: border-box;
   background-color: #f2f2f2;
   cursor: pointer;
@@ -970,6 +961,7 @@ img {
 .half-width-right input[type="text"] {
   width: 35px;
   border: 0;
+  height: 39px;
   text-align: center;
 } 
 
@@ -1001,10 +993,9 @@ img {
   background-color: #f2f2f2;
   box-sizing: border-box;
   width: 115px;
-  height: 40px;
+  height: 39px;
   position: relative;
   top: -5px;
-  left: -5px; 
 }
 
 .visitor-children-area {
@@ -1016,6 +1007,7 @@ img {
   position: relative;
   top: -5px; 
   margin-left: 0;
+  
 }
 
 .search-form-arrival {
@@ -1074,7 +1066,6 @@ img {
   margin: 0;
   margin-bottom: 25px;
   display: block;
-  letter-spacing: 0.1px;
 }
 
 .infrastructure label {
@@ -1253,12 +1244,22 @@ img {
 }
 
 .hotel-class-price {
-  margin-bottom: 15px
+  margin-bottom: 18px
 }
 
 .hotel-class {
-  margin-right: 35px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 110px;
+  vertical-align: middle;
+  margin-right: 3px
 }
+
+.hotel-price {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 .visitor-minus::before {
   content: "";
