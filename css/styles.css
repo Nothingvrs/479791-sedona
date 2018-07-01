@@ -846,21 +846,19 @@ input {
   display: flex;
   width: 46px;
   height: 48px;
-}
-
-.footer-social a {
   background: #81b3d2;
-  width: 46px;
-  height: 48px;
 }
 
-.footer-social a:focus,
-.footer-social a:hover {
+.footer-social li:focus,
+.footer-social li:hover {
   background: #669ec0;
 }
 
-.footer-social a:active {
+.footer-social li:active {
   background: #5496bd;
+}
+
+.social-item:active path {
   fill: rgba(255,255,255,0.3);
 }
 
@@ -878,11 +876,12 @@ input {
   margin-right: auto;
 }
 
-.logo-center svg:hover {
+.logo-center:focus path,
+.logo-center:hover path {
   fill: #81b3d2;
 }
 
-.logo-center svg:active {
+.logo-center:active path {
   fill: #bdbbbc;
 }
 
