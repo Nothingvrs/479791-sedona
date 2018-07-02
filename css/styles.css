@@ -752,7 +752,7 @@ input {
 
 .advantages-item-grey p {
   min-width: 186px;
-  max-width: 213px;
+  max-width: 266px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
@@ -913,6 +913,23 @@ input {
 .sort-type {
   margin-left: 30px;
   vertical-align: baseline;
+  color: rgba(0,0,0,0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-type:hover,
+.sort-type:focus {
+  color: #81b3d2;
+}
+
+.sort-type:active{
+  color: #000000;
+  border: 0;
+}
+
+.sort-active {
+  color: #81b3d2;
+  border: 0;
 }
 
 .sort-type-price {
