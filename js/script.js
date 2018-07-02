@@ -1,13 +1,27 @@
-function initMap() {
-	// Координаты центра на карте. Широта: 56.2928515, Долгота: 43.7866641
-	var centerLatLng = new google.maps.LatLng(56.2928515, 43.7866641);
-	// Обязательные опции с которыми будет проинициализированна карта
-	var mapOptions = {
-		center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
-		zoom: 8               // Зум по умолчанию. Возможные значения от 0 до 21
-	};
-	// Создаем карту внутри элемента #map
-	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
-// Ждем полной загрузки страницы, после этого запускаем initMap()
-google.maps.event.addDomListener(window, "load", initMap);
+
+ var btnsearch = document.querySelector(".modal-btn-search");
+ var modalform = document.querySelector(".modal");
+ var arrival = modalform.querySelector("[name=date-arrival]")
+ var form = modalform.querySelector(".search-form")
+ var departure = modalform.querySelector("[name=date-departure]")
+ var adults = modalform.querySelector("[name=adults]")
+ var children = modalform.querySelector("[name=children]")
+
+btnsearch.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	modalform.classList.toggle("modal-show");
+	arrival.focus();
+	
+});
+
+form.addEventListener("submit", function (evt){
+	
+	if (!arrival.value || !departure.value || !adults.value || !children.value) 
+		{evt.preventDefault();
+	}	else {
+		localStorage.setItem("adults", adults.value);
+		localStorage.setItem("children", children.value);
+	}
+})
+
+

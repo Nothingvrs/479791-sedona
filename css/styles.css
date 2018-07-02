@@ -253,14 +253,6 @@ a {
   line-height: 26px;
 }
 
-.modal-hidden {
-  background-color: #ffffff;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-  display: none;
-}
-
 .modal input[type="text"],
 .modal .visitor-plus,
 .modal .visitor-minus {
@@ -784,7 +776,7 @@ input {
   margin-right: auto;
   padding: 29px 140px;
   position: relative;
-  top: 76px;
+  top: 77px;
   cursor: pointer;
 }
 
@@ -1001,8 +993,13 @@ img {
   margin-left: -285px;
   top: 290px;
   z-index: 1; 
-  display: non;
+  display: none;
 }
+
+.modal-show {
+  display: block;
+}
+
 
 .search-form {
   display: flex;
@@ -1100,7 +1097,7 @@ img {
 .search-form-arrival {
   background-color: #f2f2f2;
   width: 350px;
-  height: 40px;
+  height: 39px;
   display: flex;
 }
 
@@ -1115,8 +1112,8 @@ img {
 .date-calendar {
   margin: 0;
   border: 0;
-  width: 40px;
-  height: 40px;
+  width: 39px;
+  height: 39px;
   background-color: #f2f2f2;
   cursor: pointer;
   margin-left: 5px;
@@ -1143,7 +1140,7 @@ img {
 .search-form-departure {
   background-color: #f2f2f2;
   width: 350px;
-  height: 40px;
+  height: 39px;
   display: flex;
   margin-top: 3px;
 }
