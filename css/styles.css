@@ -253,6 +253,14 @@ a {
   line-height: 26px;
 }
 
+.modal-hidden {
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  display: none;
+}
+
 .modal input[type="text"],
 .modal .visitor-plus,
 .modal .visitor-minus {
@@ -715,7 +723,7 @@ input {
 }
 
 .diablo-bridge-title h3 {
-  width: 150px;
+  width: 160px;
   height: 45px; 
   margin: 0 auto;
   margin-top: 45px;
@@ -1110,17 +1118,26 @@ img {
   width: 40px;
   height: 40px;
   background-color: #f2f2f2;
-  background: url("../img/calendar.svg") no-repeat center;
   cursor: pointer;
+  margin-left: 5px;
 }
 
-.date-calendar:hover,
-.date-calendar:focus {
-  background: url("../img/calendar-focus.svg") no-repeat center;
+.date-calendar svg {
+  margin-top: 6px;
+  margin-left: 2px;
 }
 
-.date-calendar:active {
-  background: url("../img/calendar-active.svg") no-repeat center;
+.date-calendar path {
+  fill: rgb(0,0,0,0.3)
+}
+
+.date-calendar:hover path,
+.date-calendar:focus path {
+  fill: #000000;
+}
+
+.date-calendar:active path {
+  fill: #81b3d2
 }
 
 .search-form-departure {
