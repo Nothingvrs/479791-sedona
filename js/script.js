@@ -18,10 +18,13 @@ form.addEventListener("submit", function (evt){
 	
 	if (!arrival.value || !departure.value || !adults.value || !children.value) 
 		{evt.preventDefault();
+		alert("Пожалуйста, заполните все поля");
 	}	else {
 		localStorage.setItem("adults", adults.value);
 		localStorage.setItem("children", children.value);
 	}
 })
+
+
 
 
