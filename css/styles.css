@@ -291,7 +291,7 @@ a {
   background-color: #669ec0;
 }
 
-.modal-search-button:focus {
+.modal-search-button:active {
   background-color: #5496bd;
   color: rgba(255,255,255,0.3);
 }
@@ -675,8 +675,10 @@ input {
 
 .small-town-img img {
   width: 100%;
+
   position: relative;
-  top: -79px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .small-town-title h3 {
@@ -706,7 +708,8 @@ input {
 .diablo-bridge-img img {
   width: 100%;
   position: relative;
-  top: -77px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .diablo-bridge-img{
@@ -738,21 +741,17 @@ input {
   box-sizing: border-box;
 }
 
-.advantages-grey {
-  display: flex;
-  height: 255px;
-}
-
 .advantages-item-grey {
-  width: 33.33333%;
+  display: inline-block; 
+  width: 33%;
   box-sizing: border-box;
-  padding: 0 36px;
+  padding: 0 68px;
   text-align: center;
+  padding-bottom: 45px;
 }
 
 .advantages-item-grey p {
   min-width: 186px;
-  max-width: 213px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
@@ -1181,7 +1180,7 @@ img {
 .input-checkbox-blocked + label::after {
   content: "";
   position: absolute;
-  left: -41px;
+  left: -40px;
   width: 30px;
   height: 30px;
   background: url("../img/checkbox-off-blocked.svg") no-repeat 2px center;
@@ -1205,7 +1204,7 @@ img {
 .input-checkbox + label::after {
   content: "";
   position: absolute;
-  left: -41px;
+  left: -40px;
   width: 30px;
   height: 30px;
   background: url("../img/checkbox-off.svg") no-repeat 2px center;
@@ -1451,6 +1450,6 @@ img {
 
 .visitor-plus:active::after,
 .visitor-plus:active::before,
-.visitor-minus:active ::before {
+.visitor-minus:active::before {
   background-color: #81b3d2;
 }
