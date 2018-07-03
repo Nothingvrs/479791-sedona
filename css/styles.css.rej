@@ -1,0 +1,10 @@
+diff a/css/styles.css b/css/styles.css	(rejected hunks)
+@@ -752,7 +752,7 @@
+ 
+ .advantages-item-grey p {
+   min-width: 186px;
+-  max-width: 213px;
++  max-width: 266px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 20px;
