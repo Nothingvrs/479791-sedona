@@ -249,6 +249,7 @@ a {
 
 .modal input[type="text"]:hover {
   background-color: #ebebeb;
+   border: 2px solid #ebebeb;
 }
 
 .modal input[type="text"]:focus {
@@ -265,7 +266,7 @@ a {
   text-transform: uppercase;
   box-sizing: border-box;
   width: 100%;
-  height: 56px;
+  height: 58px;
   padding: 0;
   align-self: flex-end;
   margin-left: auto;
@@ -776,7 +777,7 @@ input {
 .opacity-footer {
   background: rgba(255, 255, 255, 0.9);
   display: flex;
-  height: 119px;
+  height: 120px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -814,6 +815,9 @@ input {
 
 .htmllogo {
   width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social li {
@@ -845,9 +849,8 @@ input {
 }
 
 .logo-center {
-  width: 205px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .logo-center:focus path,
@@ -860,13 +863,12 @@ input {
 }
 
 .htmllogo a {
-  display: inline-block;
-  margin: 0;
-  vertical-align: middle;
+  display: block;
+  height: 41px;
+  margin-left: 8px;
 }
 
 .htmllogo p {
-  display: inline-block;
   margin: 0;
 }
 
@@ -1016,7 +1018,7 @@ img {
   height: 40px;
   display: flex;
   align-items: baseline;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .visitor-minus,
@@ -1096,7 +1098,8 @@ img {
   outline: none;
   padding: 10px;
   padding-left: 15px; 
-  width: 305px; 
+  width: 305px;
+  border: 2px solid #f2f2f2;
 } 
 
 .date-calendar {
@@ -1139,7 +1142,8 @@ img {
   border: none;
   outline: none;
   padding: 15px; 
-  width: 305px; 
+  width: 305px;
+  border: 2px solid #f2f2f2; 
 } 
 
 .search-hotel fieldset {
