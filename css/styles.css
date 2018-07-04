@@ -990,11 +990,13 @@ img {
 
 .modal-show {
   display: block;
+  animation-name: modal-open;
+  animation-duration: 2s;
+  animation-timing-function: ease;
 }
 
-
 .search-form {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
@@ -1003,7 +1005,14 @@ img {
   padding: 56px;
   padding-right: 60px;
   padding-bottom: 55px;
-  align-items: baseline
+  align-items: baseline;
+}
+
+.form-show {
+  display: flex;
+  animation-name: modal-open;
+  animation-duration: 2s;
+  animation-timing-function: ease;
 }
 
 .search-form input[type="text"] {
@@ -1493,3 +1502,9 @@ img {
 .visitor-minus:active::before {
   background-color: #81b3d2;
 }
+
+@keyframes modal-open {
+  from { height: 250px}
+  to {height: 395px}
+}
+

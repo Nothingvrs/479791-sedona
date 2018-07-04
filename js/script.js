@@ -10,6 +10,7 @@
 btnsearch.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	modalform.classList.toggle("modal-show");
+	form.classList.toggle("form-show");
 	arrival.focus();
 	
 });
