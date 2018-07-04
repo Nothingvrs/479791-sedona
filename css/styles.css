@@ -184,6 +184,18 @@ a {
   box-sizing: border-box;
  }
 
+ .form-order:before {
+  content: "";
+  width: 100%;
+  height: 290px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  z-index: 1;
+  border: 1px solid yellow; 
+  left: 5px;  
+ }
+ 
+
  .form-order a {
   font-weight: bold;
   font-size: 21px;
@@ -671,8 +683,9 @@ input {
 
 .small-town-title p {
   margin: 0;
+  padding:0;
   margin-top: 20px;
-  padding-bottom: 45px;
+  margin-bottom: 10px;
   text-align: center;
  }
 
@@ -703,23 +716,24 @@ input {
   width: 160px;
   height: 45px; 
   margin: 0 auto;
+  margin-top: 45px;
   margin-bottom: 23px;
   text-align: center;
 
 }
 
 .diablo-bridge-title p {
-  margin:0;
-  margin-top: 21px;
-  max-width: 315px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .diablo-bridge-title {
   width: 33.5%;
   text-align: center;
-  padding: 45px 45px;
+  padding: 0px 45px;
   box-sizing: border-box;
 }
 
@@ -752,6 +766,11 @@ input {
   margin: 0;
  }
 
+.form-order-content {
+  position: relative;
+  z-index: 2;
+}
+
 .modal-btn-search {
   margin-left: auto;
   margin-right: auto;
@@ -759,6 +778,7 @@ input {
   position: relative;
   top: 83px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .form-order {
@@ -790,7 +810,6 @@ input {
   background: #ffffff;
   display: flex;
   height: 120px;
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -879,15 +898,26 @@ input {
   padding-left: 6%;
   padding-right: 6%;
   height: 85px;
-  align-items: center;
+  padding-top: 28px;
+  box-sizing: border-box
+}
+
+.sort-center {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.sort-type:last-child {
+  margin-left: 28px;
 }
 
 .hotel-sort-label {
   margin-left: 48px;
+  margin-top: 6px;
 }
 
 .sort-type {
-  margin-left: 30px;
+  margin-left: 25px;
   vertical-align: baseline;
   color: rgba(0,0,0,0.3);
   border-bottom: 1px dotted #81b3d2;
@@ -908,9 +938,6 @@ input {
   border: 0;
 }
 
-.sort-type-price {
-  margin-left: 40px;
-}
 
 .hotel-list {
   display: flex;
@@ -997,6 +1024,7 @@ img {
 
 .search-form {
   display: none;
+  position: relative;
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
@@ -1010,7 +1038,7 @@ img {
 
 .form-show {
   display: flex;
-  animation-name: modal-open;
+  animation-name: form-open;
   animation-duration: 2s;
   animation-timing-function: ease;
 }
@@ -1183,15 +1211,7 @@ img {
 }
 
 .input-checkbox-blocked + label::after {
-  content: "";
-  position: absolute;
-  left: -41px;
-  width: 30px;
-  height: 30px;
-  background: url("../img/checkbox-off-blocked.svg") no-repeat 2px center;
-  top: 50%;
-  margin-top: -15px;
-  pointer-events: none;
+  background: url("../img/checkbox-off-blocked.svg") no-repeat 2px left center;
 }
 
 .input-checkbox-blocked:checked + label::after {
@@ -1200,7 +1220,7 @@ img {
   left: -41px;
   width: 30px;
   height: 30px;
-  background: url("../img/checkbox-on-blocked.svg") no-repeat center;
+  background: url("../img/checkbox-on-blocked.svg") no-repeat left center;
   top: 50%;
   margin-top: -15px;
   pointer-events: none;
@@ -1212,7 +1232,7 @@ img {
   left: -41px;
   width: 30px;
   height: 30px;
-  background: url("../img/checkbox-off.svg") no-repeat 2px center;
+  background: url("../img/checkbox-off.svg") no-repeat left center;
   top: 50%;
   margin-top: -15px;
 }
@@ -1223,42 +1243,18 @@ img {
   left: -41px;
   width: 30px;
   height: 30px;
-  background: url("../img/checkbox-on.svg") no-repeat center;
+  background: url("../img/checkbox-on.svg") no-repeat left center;
   top: 50%;
   margin-top: -15px;
-}
-
-.input-checkbox-of-type-blocked + label::after {
-  content: "";
-  position: absolute;
-  left: -43px;
-  width: 30px;
-  height: 30px;
-  background: url("../img/checkbox-off-blocked.svg") no-repeat 2px center;
-  top: 50%;
-  margin-top: -15px;
-  pointer-events: none;
-}
-
-.input-checkbox-of-type-blocked:checked + label::after {
-  content: "";
-  position: absolute;
-  left: -43px;
-  width: 30px;
-  height: 30px;
-  background: url("../img/checkbox-on-blocked.svg") no-repeat center;
-  top: 50%;
-  margin-top: -15px;
-  pointer-events: none;
 }
 
 .input-checkbox-of-type + label::after {
   content: "";
   position: absolute;
-  left: -43px;
+  left: -41px;
   width: 30px;
   height: 30px;
-  background: url("../img/checkbox-off.svg") no-repeat 2px center;
+  background: url("../img/checkbox-off.svg") no-repeat left center;
   top: 50%;
   margin-top: -15px;
 }
@@ -1266,10 +1262,10 @@ img {
 .input-checkbox-of-type:checked + label::after {
   content: "";
   position: absolute;
-  left: -43px;
+  left: -41px;
   width: 30px;
   height: 30px;
-  background: url("../img/checkbox-on.svg") no-repeat center;
+  background: url("../img/checkbox-on.svg") no-repeat left center;
   top: 50%;
   margin-top: -15px;
 }
@@ -1504,7 +1500,11 @@ img {
 }
 
 @keyframes modal-open {
-  from { height: 250px}
+  from { height: 0px}
   to {height: 395px}
 }
 
+@keyframes form-open {
+  from {top: -350px}
+  to {top: 0px}
+}
