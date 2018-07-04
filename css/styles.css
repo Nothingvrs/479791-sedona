@@ -187,7 +187,6 @@ a {
  .form-order:before {
   content: "";
   width: 100%;
-  height: 290px;
   box-sizing: border-box;
   background-color: #ffffff;
   z-index: 1; 
@@ -1021,7 +1020,7 @@ img {
 .modal-show {
   display: block;
   animation-name: modal-open;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-timing-function: ease;
 }
 
@@ -1042,7 +1041,7 @@ img {
 .form-show {
   display: flex;
   animation-name: form-open;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-timing-function: ease;
 }
 
