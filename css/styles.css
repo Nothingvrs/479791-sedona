@@ -110,6 +110,11 @@ a {
   list-style: none;
 }
 
+.advantages {
+  position: relative;
+  z-index: 2;
+}
+
 .advantages-town {
    display: flex;
   list-style: none;
@@ -166,10 +171,6 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-}
-
-.advantages-grey {
-  background-color: #eeeeee;
 }
 
 .form-order h2 {
@@ -445,6 +446,7 @@ a {
   text-decoration: none;
   margin: 0;
   margin-bottom: 5px;
+  max-width: 260px;
 }
 
 .title {
@@ -1004,8 +1006,6 @@ img {
 .center {
   display: flex;
   width: 100%;
-  align-items: cente;
-  height: 150px;
   box-sizing: border-box;
   padding: 25px 0;
 }
@@ -1029,7 +1029,7 @@ img {
 }
 
 .search-form {
-  display: none;
+  display: flex;
   position: relative;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -1039,14 +1039,6 @@ img {
   padding-right: 60px;
   padding-bottom: 55px;
   align-items: baseline;
-
-}
-
-.form-show {
-  display: flex;
-  animation-name: form-open;
-  animation-duration: 0.5s;
-  animation-timing-function: ease;
 }
 
 .search-form input[type="text"] {
@@ -1508,11 +1500,7 @@ img {
 }
 
 @keyframes modal-open {
-  from { height: 0px}
-  to {height: 395px}
+  from {transform: translateY(-100%)}
+  to {transform: translateY(0)}
 }
 
-@keyframes form-open {
-  from {top: -350px}
-  to {top: 0px}
-}
