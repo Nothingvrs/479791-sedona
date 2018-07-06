@@ -164,16 +164,14 @@ input {
 }
 
 .small-town-title {
-  margin-left: auto;
-  margin-right: auto;
-  width: 33.5%;
+  max-width: 33.5%;
   text-align: center;
   box-sizing: border-box;
   padding: 0 60px;
 }
 
 .small-town-img {
-  width: 67%;
+  max-width: 67%;
   overflow: hidden;
   height: 256px;
 }
@@ -188,7 +186,7 @@ input {
 .small-town-title h3 {
   width: 150px;
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 48px;
   margin-bottom: 25px;
 }
 
@@ -246,7 +244,7 @@ input {
   height: 70px;
   content: "";
   position: absolute;
-  top: -100px; 
+  top: -98px; 
   left: 50%; 
   margin-left: -37px; 
 }
@@ -257,7 +255,7 @@ input {
   height: 76px;
   content: "";
   position: absolute;
-  top: -105px;
+  top: -104px;
   left: 50%; 
   margin-left: -32px;  
 }
@@ -303,7 +301,7 @@ input {
   width: 155px;
   height: 45px; 
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 46px;
   margin-bottom: 23px;
   text-align: center;
   padding: 0 10px;
@@ -496,7 +494,7 @@ input {
   height: 40px;
   display: flex;
   align-items: baseline;
-  margin-top: 27px;
+  margin-top: 35px;
   margin-left: 5px;
 }
 
@@ -574,7 +572,7 @@ input {
   display: flex;
   align-items: center;
   margin-right: 9px;
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .search-form label {
@@ -1008,12 +1006,6 @@ input {
   color: #ffffff;
 }
 
-.price-per-day label {
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-}
-
 .price-controls {
   height: 32px;
   margin-bottom: 19px;
@@ -1031,6 +1023,7 @@ input {
   line-height: 32px;
   vertical-align: center;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .price-controls .min-price {
@@ -1111,34 +1104,13 @@ input {
   background: #1c4f80;
 }
 
-.hotel-class-price {
-  margin-bottom: 18px
-}
-
-.hotel-class {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 110px;
-  vertical-align: middle;
-  margin-right: 3px
-}
-
-.hotel-price {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .show {
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
-  text-transform: uppercase;
   display: block;
   margin-left: 90px;
   padding: 6px 35px;
   width: 135px;
-  font-size: 14px;
-  line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -1153,11 +1125,6 @@ input {
   background: #ffffff;
   color: #000000;
 }
-
-.hotel-class-price {
-  margin-bottom: 18px
-}
-
 
 .hotel-catalog-header {
   display: flex;
@@ -1313,10 +1280,6 @@ input {
   color: rgba(0,0,0,0.3);
 }
 
-.hotel-class-price {
-  margin-bottom: 18px
-}
-
 .hotel-class {
   display: inline-block;
   box-sizing: border-box;
@@ -1328,6 +1291,10 @@ input {
 .hotel-price {
   display: inline-block;
   vertical-align: middle;
+}
+
+.hotel-class-price {
+  margin-bottom: 17px
 }
 
 .button-more {
@@ -1380,11 +1347,6 @@ input {
 
 .hotel-item img {
   margin-right: 30px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .hotel-item-links {
