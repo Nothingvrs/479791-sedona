@@ -362,7 +362,7 @@ input {
   text-align: center;
   padding: 0 90px ;
   padding-top: 50px;
-  padding-bottom: 111px;
+  padding-bottom: 130px;
   box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
@@ -406,21 +406,22 @@ input {
 .form-order p {
   margin: 0;
   margin-top: 25px;
+  margin-bottom: 9px;
   text-align: center;
   padding: 0 30px;
 }
 
 .modal-btn-search {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 29.5px 140px;
-  position: relative;
-  top: 81px;
+  padding: 30px;
+  width: 568px;
+  box-sizing: border-box;
+  position: absolute;
   cursor: pointer;
   z-index: 2;
-}
-
-.modal-btn-search {
+  bottom: 0;
+  left: 50%;
+  margin-left: -284px;
+  display: block;
   background-color: #766357;
 }
 
@@ -464,11 +465,8 @@ input {
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
-  width: 575px;
-  padding: 56px;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 55px;
+  width: 568px;
+  padding: 55px;
   align-items: baseline;
 }
 
@@ -487,15 +485,6 @@ input {
 .search-form input[type="text"]:focus {
   background-color: #ffffff;
   border: 2px solid #f2f2f2;
-}
-
-.half-width {
-  width: 50%;
-  height: 40px;
-  display: flex;
-  align-items: baseline;
-  margin-top: 35px;
-  margin-left: 5px;
 }
 
 .visitor-minus,
@@ -518,7 +507,7 @@ input {
   position: absolute;
   top: 50%;
   margin-top: -1.5px;
-  right: 90px;
+  right: 88px;
 }
 
 .visitor-plus::before {
@@ -530,7 +519,7 @@ input {
   position: absolute;
   top: 50%;
   margin-top: -1.5px;
-  right: 15px;
+  right: 13px;
 }
 
 .visitor-plus::after {
@@ -543,7 +532,7 @@ input {
   top: 50%;
   margin-top: -1.5px;
   transform: rotate(90deg);
-  right: 15px;
+  right: 13px;
 }
 
 .visitor-plus:hover::after,
@@ -564,29 +553,40 @@ input {
 .half-width-right input[type="text"] {
   width: 35px;
   border: 0;
-  height: 39px;
   text-align: center;
-} 
-
-.half-width-right {
-  display: flex;
-  align-items: center;
-  margin-right: 9px;
-  margin-top: 30px;
 }
 
-.search-form label {
-  margin-right: 15px;
+.visitors {
+  width: 458px;
+  height: 39px;
+  display: flex;
+  margin-top: 26px;
+} 
+
+.half-width {
+  width: 50%;
+  height: 39px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.half-width-right {
+  width: 50%;
+  height: 39px;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 5px;
 }
 
 .half-width label {
-  margin-right: 41px;
-  margin-bottom: 10px;
+  margin-top: 9px;
+  margin-right: 40px;
 }
 
 .half-width-right label {
-  margin-right: 27px;
-  margin-bottom: 3px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: 25px;
   
 }
 .half-width input[type="text"] {
@@ -606,7 +606,6 @@ input {
   width: 115px;
   height: 39px;
   position: relative;
-  top: -5px;
 }
 
 .visitor-children-area {
@@ -614,10 +613,8 @@ input {
   background-color: #f2f2f2;
   box-sizing: border-box;
   width: 115px;
-  height: 40px;
+  height: 39px;
   position: relative; 
-  margin-left: 0;
-  
 }
 
 .form-wrapper-departure {
@@ -628,7 +625,8 @@ input {
 
 .form-wrapper-departure label {
   margin-top: 5px;
-  margin-left: 5px;
+  width: 100px;
+  margin-right: 14px;
 }
 
 .form-wrapper-arrival {
@@ -637,7 +635,8 @@ input {
 
 .form-wrapper-arrival label {
   margin-top: 5px;
-  margin-left: 5px;
+  width: 94px;
+  margin-right: 19px;
 }
 
 .search-form-arrival {
@@ -645,14 +644,14 @@ input {
   width: 348px;
   height: 39px;
   display: flex;
-  margin-left: 10px;
 }
 
 .search-form-arrival input[type="text"] {
   border: none;
   outline: none;
-  padding: 9px; 
-  width: 310px;
+  padding: 4px;
+  padding-left: 12px; 
+  width: 309px;
   border: 2px solid #f2f2f2;
 } 
 
@@ -682,17 +681,17 @@ input {
 
 .search-form-departure {
   background-color: #f2f2f2;
-  width: 350px;
+  width: 347px;
   height: 39px;
   display: flex;
-  margin-left: 5px;
 }
 
 .search-form-departure input[type="text"] {
   border: none;
   outline: none;
-  padding: 11px;
-  width: 310px;
+  padding: 4px;
+  padding-left: 11px;
+  width: 309px;
   border: 2px solid #f2f2f2; 
 } 
 
@@ -707,9 +706,7 @@ input {
   width: 100%;
   height: 58px;
   padding: 12px 0;
-  margin-left: 5px;
-  margin-right: 10px;
-  margin-top: 48px;
+  margin-top: 57px;
   border: 0;
   cursor: pointer;
 }
@@ -1087,9 +1084,8 @@ input {
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  border: 10px solid #ffffff; 
-  background: #ababab; 
+  .range-toggle:hover {
+  transform: scale(1.1);
 }
 
 .range-toggle-min {
@@ -1098,10 +1094,6 @@ input {
 
 .range-toggle-max {
   left: 80%;
-}
-
-.range-toggle:hover {
-  background: #1c4f80;
 }
 
 .show {
