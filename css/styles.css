@@ -578,12 +578,12 @@ input {
 }
 
 .half-width label {
-  margin-top: 5px;
+  margin-top: 6px;
   margin-right: 40px;
 }
 
 .half-width-right label {
-  margin-top: 5px;
+  margin-top: 6px;
   margin-left: auto;
   margin-right: 25px;
   
@@ -623,7 +623,7 @@ input {
 }
 
 .form-wrapper-departure label {
-  margin-top: 5px;
+  margin-top: 6px;
   width: 100px;
   margin-right: 14px;
 }
@@ -633,7 +633,7 @@ input {
 }
 
 .form-wrapper-arrival label {
-  margin-top: 5px;
+  margin-top: 6px;
   width: 94px;
   margin-right: 19px;
 }
