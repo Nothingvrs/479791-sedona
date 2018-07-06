@@ -160,7 +160,6 @@ input {
   display: flex;
   background-color: #81b3d2;
   color: #ffffff;
-  max-width: 1200px;
 }
 
 .small-town-title {
@@ -178,6 +177,7 @@ input {
 
 .small-town-img img {
   width: 100%;
+  height: auto;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -224,7 +224,6 @@ input {
   padding: 0;
   background-color: #ffffff;
   color: #000000; 
-  max-width: 1200px;
 }
 
 .advantages-town-house h4:before {
@@ -281,11 +280,11 @@ input {
   background-color: #81b3d2;
   color: #ffffff;
   display: flex;
-  max-width: 1200px;
 }
 
 .diablo-bridge-img img {
   width: 100%;
+  height: auto;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -320,6 +319,10 @@ input {
   text-align: center;
   padding: 0px 45px;
   box-sizing: border-box;
+}
+
+.advantages-item {
+  width: 100%;
 }
 
 .advantages-item-grey { 
@@ -858,7 +861,7 @@ input {
   display: flex;
   box-sizing: border-box;
   padding-top: 26px;
-  padding-bottom: 8px;
+  padding-bottom: 7px;
 }
 
 .search-hotel fieldset {
@@ -932,15 +935,7 @@ input {
 }
 
 .input-checkbox-blocked:checked + label::after {
-  content: "";
-  position: absolute;
-  left: -41px;
-  width: 30px;
-  height: 30px;
   background: url("../img/checkbox-on-blocked.svg") no-repeat left center;
-  top: 50%;
-  margin-top: -15px;
-  pointer-events: none;
 }
 
 .input-checkbox + label::after {
@@ -954,15 +949,16 @@ input {
   margin-top: -15px;
 }
 
+.input-checkbox-of-type:focus ~ label::after {
+  outline: #81b3d2 solid 1px;
+}
+
+.input-checkbox:focus ~ label::after {
+  outline: #81b3d2 solid 1px;
+}
+
 .input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  left: -41px;
-  width: 30px;
-  height: 30px;
   background: url("../img/checkbox-on.svg") no-repeat left center;
-  top: 50%;
-  margin-top: -15px;
 }
 
 .input-checkbox-of-type + label::after {
@@ -977,14 +973,7 @@ input {
 }
 
 .input-checkbox-of-type:checked + label::after {
-  content: "";
-  position: absolute;
-  left: -41px;
-  width: 30px;
-  height: 30px;
   background: url("../img/checkbox-on.svg") no-repeat left center;
-  top: 50%;
-  margin-top: -15px;
 }
 
 .price-per-day {
@@ -994,7 +983,7 @@ input {
 }
 
 .price-per-day legend {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   margin-left: 5px;
   font-size: 16px;
   line-height: 21px;
@@ -1004,9 +993,9 @@ input {
 
 .price-controls {
   height: 32px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   margin-left: 3px;
-  margin-top: 2px;
+  margin-top: 3px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1055,7 +1044,7 @@ input {
 
 .range-controls {
   position: relative;
-  margin-left: 3px;
+  margin-left: 6px;
   margin-bottom: 32px;
 }
 
@@ -1079,7 +1068,7 @@ input {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 100%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
@@ -1099,9 +1088,12 @@ input {
   font-size: 14px;
   line-height: 21px;
   display: block;
-  margin-left: 90px;
-  padding: 6px 35px;
-  width: 135px;
+  margin-left: 89px;
+  padding: 0 33.5px;
+  padding-bottom: 2px;
+  width: 137px;
+  height: 36px;
+  box-sizing: border-box;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -1120,12 +1112,12 @@ input {
 .hotel-catalog-header {
   display: flex;
   background: #ffffff;
-  margin-bottom: 1px;
   padding-left: 6%;
   padding-right: 6%;
-  height: 85px;
+  height: 87px;
   padding-top: 28px;
-  box-sizing: border-box
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .hotel-found {
@@ -1133,14 +1125,14 @@ input {
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
-  text-align: middle;
+  margin-top: 3px;
 }
 
 .hotel-sort-label {
   font-size: 12px;
   line-height: 18px;
   color: #000000;
-  margin-top: 5px;
+  margin-top: 9px;
   margin-left: 48px;
 }
 
@@ -1234,14 +1226,15 @@ input {
   display: flex;
   width: 100%;
   box-sizing: border-box;
-  padding: 25px 0;
+  padding: 24.5px 0;
 }
 
 .hotel-item {
  padding-left: 6%;
  padding-right: 6%;
  background: #ffffff;
- margin-bottom: 1px;
+ border-bottom: 1px solid #f2f2f2;
+ box-sizing: border-box;
 }
 
 .title {
