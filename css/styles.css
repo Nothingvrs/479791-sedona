@@ -76,7 +76,6 @@ a {
   display: flex;
   background-color: #ffffff;
   flex-direction: column;
-  width: 100%;
 }
 
 .intro {
@@ -93,7 +92,6 @@ a {
 
 .sedona-intro p {
   line-height: 26px;
-  min-width: 460px;
 }
 
 
@@ -106,7 +104,6 @@ a {
 .diablo-bridge {
   background-color: #81b3d2;
   color: #ffffff;
-  width: 1200px;
 }
 
 .advantages-list {
@@ -122,12 +119,12 @@ a {
 }
 
 .advantages-town {
-   display: flex;
+  display: flex;
   list-style: none;
   padding: 0;
   background-color: #ffffff;
   color: #000000; 
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .advantages-town-house h4:before {
@@ -185,9 +182,18 @@ a {
   font-weight: bold;
   line-height: 36px;
   padding: 0 30px;
-  min-width: 570px;
 }
-
+ .form-order {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 0 315px ;
+  padding-top: 50px;
+  padding-bottom: 111px;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+ }
 
  .form-order:before {
   content: "";
@@ -212,12 +218,10 @@ a {
  }
 
 .form-order p {
+  margin: 0;
+  margin-top: 25px;
   text-align: center;
   padding: 0 30px;
-  min-width: 570px;
-  margin: 0 auto;
-  margin-top: 25px;
-  box-sizing: border-box;
 }
 
 .modal-btn-search {
@@ -292,8 +296,8 @@ a {
   width: 100%;
   height: 58px;
   padding: 12px 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5px;
+  margin-right: 10px;
   margin-top: 48px;
   border: 0;
   cursor: pointer;
@@ -318,7 +322,7 @@ a {
   display: flex;
   box-sizing: border-box;
   padding-top: 26px;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
 }
 
 .infrastructure legend {
@@ -372,7 +376,7 @@ a {
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 30px;
+  text-align: middle;
 }
 
 .hotel-sort-label {
@@ -649,7 +653,8 @@ input {
 .sedona-intro {
   box-sizing: border-box;
   text-align: center;
-  width: 100%;
+  max-width: 1200px;
+  
   padding: 0 340px; 
   padding-bottom: 52px;
 }
@@ -663,16 +668,16 @@ input {
   display: flex;
   background-color: #81b3d2;
   color: #ffffff;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .small-town-title {
   margin-left: auto;
   margin-right: auto;
   width: 33.5%;
+  text-align: center;
   box-sizing: border-box;
   padding: 0 60px;
-  text-align: center;
 }
 
 
@@ -691,11 +696,9 @@ input {
 
 .small-town-title h3 {
   width: 150px;
-  text-align: center;
   margin: 0 auto;
   margin-top: 45px;
   margin-bottom: 25px;
-
 }
 
 .small-town-title p {
@@ -714,6 +717,7 @@ input {
 
 .diablo-bridge {
   display: flex;
+  max-width: 1200px;
 }
 
 .diablo-bridge-img img {
@@ -790,46 +794,30 @@ input {
   max-width: 120px;
  }
 
-.form-order {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  text-align: center;
-  padding: 0 315px ;
-  padding-top: 50px;
-  padding-bottom: 55px;
-  box-sizing: border-box;
-  position: relative;
-}
 
 .form-order h2 {
-  margin: 0 auto;
-  max-width: 570px;
-  box-sizing: border-box;
+  margin: 0;
  }
 
 .form-order-content {
-  text-align: center;
   position: relative;
   z-index: 2;
-  max-width: 570px;
 }
 
 .modal-btn-search {
   margin-left: auto;
   margin-right: auto;
-  padding: 29px 139px;
-  box-sizing: border-box;
-  width: 570px;
+  padding: 29.5px 140px;
   position: relative;
-  top: 55px;
+  top: 81px;
   cursor: pointer;
   z-index: 2;
+  display: inline-block;
+  box-sizing: padding-box;
 }
 
 .map {
   height: 595px;
-  width: 100%;
   background-color: #e9e5dc;
   background-image: url("../img/map.jpg");
 }
@@ -934,11 +922,12 @@ input {
 .hotel-catalog-header {
   display: flex;
   background: #ffffff;
+  margin-bottom: 1px;
   padding-left: 6%;
   padding-right: 6%;
-  padding-top: 30px;
-  box-sizing: border-box;
-  border-bottom: 1px solid #f2f2f2;
+  height: 85px;
+  padding-top: 28px;
+  box-sizing: border-box
 }
 
 .sort-center {
@@ -974,7 +963,7 @@ input {
 
 .sort-active {
   color: #81b3d2;
-  border: none;
+  border: 0;
 }
 
 
@@ -989,7 +978,7 @@ input {
  padding-left: 6%;
  padding-right: 6%;
  background: #ffffff;
- border-bottom: 1px solid #f2f2f2;
+ margin-bottom: 1px;
 }
 
 .hotel-item img {
@@ -1036,7 +1025,7 @@ img {
   display: flex;
   width: 100%;
   box-sizing: border-box;
-  padding: 24.5px 0;
+  padding: 25px 0;
 }
 
 .modal {
@@ -1065,7 +1054,8 @@ img {
   justify-content: space-between;
   width: 575px;
   padding: 56px;
-  padding-right: 60px;
+  padding-right: 50px;
+  padding-left: 50px;
   padding-bottom: 55px;
   align-items: baseline;
 }
@@ -1081,7 +1071,8 @@ img {
   height: 40px;
   display: flex;
   align-items: baseline;
-  margin-top: 34px;
+  margin-top: 27px;
+  margin-left: 5px;
 }
 
 .visitor-minus,
@@ -1106,23 +1097,29 @@ img {
 
 .half-width-right {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  margin-right: 9px;
+  margin-top: 28px;
 }
 
+.search-form label {
+  margin-right: 15px;
+}
 
 .half-width label {
   margin-right: 41px;
+  margin-bottom: 10px;
 }
 
 .half-width-right label {
-  margin-right: 26px;
+  margin-right: 27px;
+  margin-bottom: 3px;
   
 }
 .half-width input[type="text"] {
   width: 35px;
   border: 0;
   text-align: center;
-  vertical-align: baseline;
 } 
 
 .search-form input[type="button"]{
@@ -1145,10 +1142,29 @@ img {
   box-sizing: border-box;
   width: 115px;
   height: 40px;
-  position: relative;
-  top: -5px; 
+  position: relative; 
   margin-left: 0;
   
+}
+
+.form-wrapper-departure {
+  display: flex;
+  margin-top: 28px;
+  align-items: top;
+}
+
+.form-wrapper-departure label {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.form-wrapper-arrival {
+  display: flex;
+}
+
+.form-wrapper-arrival label {
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .search-form-arrival {
@@ -1156,12 +1172,13 @@ img {
   width: 348px;
   height: 39px;
   display: flex;
+  margin-left: 10px;
 }
 
 .search-form-arrival input[type="text"] {
+  border: none;
   outline: none;
-  padding: 10px;
-  padding-left: 12px; 
+  padding: 9px; 
   width: 310px;
   border: 2px solid #f2f2f2;
 } 
@@ -1171,13 +1188,13 @@ img {
   border: 0;
   width: 39px;
   height: 39px;
+  padding-left: 7px;
+  padding-top: 6px;
   background-color: #f2f2f2;
   cursor: pointer;
 }
 
 .date-calendar svg {
-  position: relative;
-  top: 4px;
 }
 
 .date-calendar path {
@@ -1190,45 +1207,24 @@ img {
 }
 
 .date-calendar:active path {
-  fill: #81b3d2
+  fill: #81b3d2;
 }
 
 .search-form-departure {
   background-color: #f2f2f2;
-  width: 347px;
+  width: 350px;
   height: 39px;
   display: flex;
+  margin-left: 5px;
 }
 
 .search-form-departure input[type="text"] {
   border: none;
   outline: none;
-  padding: 10px;
-  padding-left: 10px; 
+  padding: 11px;
   width: 310px;
   border: 2px solid #f2f2f2; 
 } 
-
-
-.form-wrapper-arrival {
-  display: flex;
-}
-
-.form-wrapper-departure {
-  display: flex;
-  margin-top: 28px;
-}
-
-.form-wrapper-arrival label {
-  margin-top: 5px;
-  margin-right: 22.5px;
-  vertical-align: baseline;
-}
-
-.form-wrapper-departure label {
-  margin-top: 5px;
-  margin-right: 20px
-}
 
 .search-hotel fieldset {
   border: 0;
@@ -1352,7 +1348,8 @@ img {
 
 .price-per-day legend {
   margin-bottom: 9px;
-  margin-left: 5px;
+  margin-left: 5
+  px;
 }
 
 .price-controls {
