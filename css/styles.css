@@ -172,7 +172,6 @@ input {
   padding: 0 60px;
 }
 
-
 .small-town-img {
   width: 67%;
   overflow: hidden;
@@ -195,7 +194,7 @@ input {
 
 .small-town-title p {
   margin: 0;
-  padding:0;
+  padding: 0;
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
@@ -424,7 +423,7 @@ input {
 }
 
 .modal-btn-search {
-  background-color:#766357;
+  background-color: #766357;
 }
 
 .modal-btn-search:hover,
@@ -484,7 +483,7 @@ input {
 
 .search-form input[type="text"]:hover {
   background-color: #ebebeb;
-   border: 2px solid #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .search-form input[type="text"]:focus {
@@ -670,9 +669,6 @@ input {
   cursor: pointer;
 }
 
-.date-calendar svg {
-}
-
 .date-calendar path {
   fill: rgb(0,0,0,0.3)
 }
@@ -773,7 +769,7 @@ input {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  margin:0;
+  margin: 0;
 }
 
 .footer-social {
@@ -873,7 +869,7 @@ input {
 
 .search-hotel fieldset {
   border: 0;
-  padding:0;
+  padding: 0;
 }
 
 .infrastructure {
@@ -1223,7 +1219,6 @@ input {
   margin-left: auto;
   box-sizing: border-box;
   display: flex;
-  padding-top: ;
 }
 
 .sort-asc {
