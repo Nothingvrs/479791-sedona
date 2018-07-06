@@ -186,8 +186,8 @@ input {
 .small-town-title h3 {
   width: 150px;
   margin: 0 auto;
-  margin-top: 48px;
-  margin-bottom: 25px;
+  margin-top: 47px;
+  margin-bottom: 24px;
 }
 
 .small-town-title p {
@@ -723,7 +723,7 @@ input {
 /*карта*/
 
 .map {
-  height: 595px;
+  height: 592px;
   background-color: #e9e5dc;
   background-image: url("../img/map.jpg");
 }
