@@ -101,7 +101,7 @@ input {
 .banner {
   position: relative;
   height: 510px;
-  background: url(../img/banner-bottom.png) no-repeat center bottom,
+  background: url("../img/banner-bottom.png") no-repeat center bottom,
               #81b3d2 url("../img/sedona.jpg") no-repeat 50% 29%;
   background-size: 100% 58px, 100% auto;
 }
@@ -694,14 +694,14 @@ input {
   border: 0;
   width: 39px;
   height: 39px;
-  padding-left: 7px;
-  padding-top: 6px;
+  padding-left: 4px;
+  padding-top: 9px;
   background-color: #f2f2f2;
   cursor: pointer;
 }
 
 .date-calendar path {
-  fill: rgb(0,0,0,0.3)
+  fill: rgba(0,0,0,0.3);
 }
 
 .date-calendar:hover path,
@@ -1044,7 +1044,7 @@ input {
 
 .price-controls .min-price {
   width: 29%;
-  padding-left: 21%
+  padding-left: 21%;
 }
 
 .price-controls .max-price {
@@ -1082,7 +1082,6 @@ input {
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -1164,7 +1163,7 @@ input {
   font-size: 12px;
   line-height: 18px;
   color: #000000;
-  margin-top: 9px;
+  margin-top: 8px;
   margin-left: 48px;
 }
 
@@ -1297,7 +1296,7 @@ input {
   box-sizing: border-box;
   width: 110px;
   vertical-align: middle;
-  margin-right: 3px
+  margin-right: 3px;
 }
 
 .hotel-price {
@@ -1306,7 +1305,7 @@ input {
 }
 
 .hotel-class-price {
-  margin-bottom: 18px
+  margin-bottom: 18px;
 }
 
 .button-more {
@@ -1434,7 +1433,7 @@ input {
 }
 
 .star-two {
-  width: 40px;
+  width: 41px;
   background: url("../img/star.svg") no-repeat,
               url("../img/star.svg") no-repeat 24px 0;
 }
@@ -1456,7 +1455,11 @@ input {
 }
 
 @keyframes modal-open {
-  from {transform: translateY(-100%)}
-  to {transform: translateY(0)}
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
