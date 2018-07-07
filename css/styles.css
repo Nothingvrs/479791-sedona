@@ -769,6 +769,7 @@ ol {
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   min-height: 120px;
+  height: 119px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -781,18 +782,14 @@ ol {
   background: #ffffff;
   display: flex;
   min-height: 120px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 119px;
   align-items: center;
   position: relative;
 }
 
 .hashtag {
   width: 33.3%;
-  text-align: center;
-  width: 140px;
-  margin-left: auto;
-  margin-right: auto;  
+  text-align: center; 
 }
 
 .hashtag p{
@@ -808,8 +805,6 @@ ol {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
   list-style: none;
 }
 
@@ -846,7 +841,8 @@ ol {
   width: 33.3%; 
   padding: 0;  
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  align-items: center; 
 }
 
 .htmllogo {
@@ -1019,7 +1015,7 @@ ol {
 }
 
 .price-per-day legend {
-  margin-bottom: 8px;
+  padding-bottom: 8px;
   margin-left: 5px;
   font-size: 16px;
   line-height: 21px;
@@ -1059,12 +1055,13 @@ ol {
 
 .price-controls input {
   width: 50%;
+  font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
-  color: inherit;
-  font: inherit;
+  color: #ffffff;
   background: none;
   border: none;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .price-controls::after {
@@ -1259,7 +1256,6 @@ ol {
   width: 100%;
   box-sizing: border-box;
   padding: 24.5px 0;
-  border-bottom: 1px solid #f2f2f2;
 }
 
 .hotel-item {
@@ -1267,6 +1263,7 @@ ol {
  padding-right: 6%;
  background: #ffffff;
  box-sizing: border-box;
+ border-bottom: 1px solid #f2f2f2;
 }
 
 .title {
