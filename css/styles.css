@@ -208,8 +208,7 @@ input {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
-  position: relative;
-  color: #000000;  
+  position: relative; 
 }
 
 .advantages {
