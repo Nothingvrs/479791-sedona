@@ -980,14 +980,12 @@ input {
 
 .input-checkbox:disabled + label::after,
 .input-checkbox-blocked + label::after {
-  background: url("../img/checkbox-off-blocked.svg") no-repeat left center;
-  border: 1px solid yellow;
+  background: url("../img/checkbox-off-blocked.png") no-repeat left center;
 }
 
 .input-checkbox:disabled:checked + label::after,
 .input-checkbox-blocked:checked + label::after {
-  background: url("../img/checkbox-on-blocked.svg") no-repeat left center;
-  border: 1px solid yellow;
+  background: url("../img/checkbox-on-blocked.png") no-repeat left center;
 }
 
 .input-checkbox + label::after {
@@ -1030,14 +1028,12 @@ input {
 
 .input-checkbox-of-type:disabled + label::after,
 .input-checkbox-blocked + label::after {
-  background: url("../img/checkbox-off-blocked.svg") no-repeat left center;
-  border: 1px solid yellow;
+  background: url("../img/checkbox-off-blocked.png") no-repeat left center;
 }
 
 .input-checkbox-of-type:disabled:checked + label::after,
 .input-checkbox-blocked:checked + label::after {
-  background: url("../img/checkbox-on-blocked.svg") no-repeat left center;
-  border: 1px solid yellow;
+  background: url("../img/checkbox-on-blocked.png") no-repeat left center;
 }
 
 .price-per-day {
