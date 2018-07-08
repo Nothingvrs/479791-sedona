@@ -829,6 +829,10 @@ input {
   fill: rgba(255,255,255,0.3);
 }
 
+.social-item svg {
+   pointer-events: none;
+}
+
 .social-item {
   display: flex;
   width: 50px;
@@ -857,13 +861,21 @@ input {
   align-items: center;
 }
 
-.logo-center:focus path,
-.logo-center:hover path {
+.logo-svg {
+  display: block;
+}
+
+.logo-svg:focus path,
+.logo-svg:hover path {
   fill: #81b3d2;
 }
 
-.logo-center:active path {
+.logo-svg:active path {
   fill: #bdbbbc;
+}
+
+.logo-svg svg {
+   pointer-events: none;
 }
 
 .htmllogo a {
@@ -1061,6 +1073,7 @@ input {
   border: none;
   font-size: 14px;
   line-height: 21px;
+  height: 21px;
 }
 
 .price-controls::after {
@@ -1200,45 +1213,39 @@ input {
 
 .sort-asc {
   box-sizing: border-box;
-  cursor: pointer;
   padding-top: 6px;
 }
 
 .sort-desc { 
-  cursor: pointer;
   margin-top: 6px;
   margin-left: 12px;
 }
 
-.sort-asc:hover path,
-.sort-asc:focus path {
-  fill: #000000;
-  border: none;  
+.sort-svg svg {
+   pointer-events: none;
 }
 
-.sort-desc:hover path,
-.sort-desc:focus path {
-  fill: #000000;
-  border: none; 
+.sort-svg {
+  cursor: pointer;
+  display: block;
 }
 
-.sort-asc:active path {
+.sort-svg:hover path,
+.sort-svg:focus path {
+  fill: #000000; 
+}
+
+.sort-svg:active path {
+  fill: #81b3d2; 
+}
+
+.active-sort {
   fill: #81b3d2;
-  border: none; 
-}
-
-.sort-desc:active path {
-  fill: #81b3d2;
-  border: none; 
-}
-
-.sort-asc-active path {
-  fill: #81b3d2;
-  border: none; 
 }
 
 .sort-active {
-  fill: #81b3d2;
+  color: #81b3d2;
+  border: none;
 }
 
 .hotel-list {
