@@ -373,6 +373,10 @@ input {
   padding-right: 50px;
 }
 
+.few-tourists {
+  width: 250px;
+}
+
 .advantages-item-grey p {
   margin-right: auto;
   margin-left: auto;
@@ -974,12 +978,16 @@ input {
   margin-left: 42px;
 }
 
+.input-checkbox:disabled + label::after,
 .input-checkbox-blocked + label::after {
-  background: url("../img/checkbox-off-blocked.svg") no-repeat 2px left center;
+  background: url("../img/checkbox-off-blocked.svg") no-repeat left center;
+  border: 1px solid yellow;
 }
 
+.input-checkbox:disabled:checked + label::after,
 .input-checkbox-blocked:checked + label::after {
   background: url("../img/checkbox-on-blocked.svg") no-repeat left center;
+  border: 1px solid yellow;
 }
 
 .input-checkbox + label::after {
@@ -991,10 +999,6 @@ input {
   background: url("../img/checkbox-off.svg") no-repeat left center;
   top: 50%;
   margin-top: -15px;
-}
-
-.input-checkbox-of-type:focus ~ label::after {
-  outline: #81b3d2 solid 1px;
 }
 
 .input-checkbox:focus ~ label::after {
@@ -1016,8 +1020,22 @@ input {
   margin-top: -15px;
 }
 
+.input-checkbox-of-type:focus ~ label::after {
+  outline: #81b3d2 solid 1px;
+}
+
 .input-checkbox-of-type:checked + label::after {
   background: url("../img/checkbox-on.svg") no-repeat left center;
+}
+
+.input-checkbox-of-type:disabled + label::after,
+.input-checkbox-blocked + label::after {
+  background: url("../img/checkbox-off-blocked.svg") no-repeat left center;
+}
+
+.input-checkbox-of-type:disabled:checked + label::after,
+.input-checkbox-blocked:checked + label::after {
+  background: url("../img/checkbox-on-blocked.svg") no-repeat left center;
 }
 
 .price-per-day {
@@ -1204,6 +1222,10 @@ input {
   border: none; 
 }
 
+.sort-active {
+  color: #81b3d2;
+  border: none;
+}
 
 .sort-arrow {
   margin-left: auto;
@@ -1239,13 +1261,10 @@ input {
   fill: #81b3d2; 
 }
 
-.active-sort {
+.active-sort:focus path,
+.active-sort:hover path,
+.active-sort path {
   fill: #81b3d2;
-}
-
-.sort-active {
-  color: #81b3d2;
-  border: none;
 }
 
 .hotel-list {
