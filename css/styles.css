@@ -1196,7 +1196,7 @@ input {
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-left: 27.5px;
+  margin-left: 28px;
   color: rgba(0,0,0,0.3);
   border-bottom: 1px dotted #81b3d2;
 }
@@ -1206,10 +1206,6 @@ input {
   margin-left: 5px;
   padding-left: 7px;
   padding-right: 7px;
-}
-
-.sort-by-rating {
-  margin-left: 30px;
 }
 
 .sort-type:hover,
