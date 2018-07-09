@@ -369,12 +369,8 @@ input {
 } 
 
 .right-grey {
-  padding-left: 70px;
-  padding-right: 50px;
-}
-
-.few-tourists {
-  width: 250px;
+  padding-left: 80px;
+  padding-right: 60px;
 }
 
 .advantages-item-grey p {
@@ -1200,14 +1196,20 @@ input {
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-left: 26px;
+  margin-left: 27.5px;
   color: rgba(0,0,0,0.3);
   border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-center {
   margin-top: 5px;
-  margin-left: 14px;
+  margin-left: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.sort-by-rating {
+  margin-left: 30px;
 }
 
 .sort-type:hover,
